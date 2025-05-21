@@ -1,5 +1,15 @@
-const PageContent = () => {
-  return <div>page content</div>
-}
+import type { ReactNode } from "react";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
+
+const PageContent = ({ children }: { children: ReactNode }) => {
+  return (
+    <>
+      <Header />
+      <main className="flex-grow">{children}</main>
+      <Footer />
+    </>
+  );
+};
 
 export default PageContent;
