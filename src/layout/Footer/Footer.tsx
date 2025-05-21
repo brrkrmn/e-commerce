@@ -11,9 +11,9 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full flex flex-col font-montserrat">
-      <div className="flex flex-col items-start gap-4 bg-light-gray text-dark-blue py-12 px-10 md:px-48 md:flex-row md:justify-between">
-        <h3 className="font-montserrat font-bold text-2xl">Bandage</h3>
+    <div className="w-full flex flex-col font-montserrat tracking-wide *:px-10 *:md:px-48 *:py-12">
+      <div className="flex flex-col items-start gap-4 bg-light-gray-1 text-dark-blue md:flex-row md:justify-between">
+        <h3 className="font-bold text-2xl">Bandage</h3>
         <div className="flex items-center justify-start gap-6">
           <Link to="/home">
             <img
@@ -38,7 +38,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col items-start gap-10 bg-main text-dark-blue py-12 px-10 md:px-48 lg:flex-row lg:justify-between">
+      <div className="flex flex-col items-start gap-10 bg-main text-dark-blue lg:flex-row lg:justify-between">
         {links.map((link) => (
           <div className="flex flex-col items-start justify-start gap-4">
             <h5 className="font-bold py-2">{link.title}</h5>
@@ -64,17 +64,17 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="cursor-pointer w-[40%] bg-blue text-white font-medium tracking-wide rounded-r-sm px-2 py-4 text-sm"
+              className="cursor-pointer w-[40%] bg-blue text-white font-medium rounded-r-sm px-2 py-4 text-sm"
             >
               Subscribe
             </button>
           </form>
-          <p className="text-gray tracking-wide text-xs font-semibold">
+          <p className="text-gray text-xs font-semibold">
             Lore imp sum dolor Amit
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center bg-light-gray text-gray font-bold py-10 sm:text-sm leading-6 font-montserrat tracking-wide md:justify-start md:flex-row md:gap-1 md:px-48 *:text-nowrap">
+      <div className="flex flex-col items-center justify-center bg-light-gray-1 text-gray font-bold sm:text-sm leading-6 md:justify-start md:flex-row md:gap-1 *:text-nowrap">
         <p>Made With Love By</p>
         <p>Finland All Right Reserved</p>
       </div>
