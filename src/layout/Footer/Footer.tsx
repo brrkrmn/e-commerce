@@ -1,9 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router";
+import { links } from "./constants";
 
 const Footer = () => {
+  const [value, setValue] = useState("");
+
+  const handleSubscribe = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setValue("");
+  };
+
   return (
-    <div className="border-2 w-full flex flex-col ">
-      <div className="flex flex-col items-start gap-4 bg-[#FAFAFA] text-[#252B42] py-12 px-10 md:px-48 md:flex-row md:justify-between">
+    <div className="w-full flex flex-col font-montserrat">
+      <div className="flex flex-col items-start gap-4 bg-light-gray text-dark-blue py-12 px-10 md:px-48 md:flex-row md:justify-between">
         <h3 className="font-montserrat font-bold text-2xl">Bandage</h3>
         <div className="flex items-center justify-start gap-6">
           <Link to="/home">
@@ -29,8 +38,43 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div>info</div>
-      <div className="flex flex-col items-center justify-center bg-[#FAFAFA] text-[#737373] font-bold py-10 sm:text-md leading-6 font-montserrat tracking-wide md:justify-start md:flex-row md:gap-1 md:px-48 *:text-nowrap">
+      <div className="flex flex-col items-start gap-10 bg-main text-dark-blue py-12 px-10 md:px-48 lg:flex-row lg:justify-between">
+        {links.map((link) => (
+          <div className="flex flex-col items-start justify-start gap-4">
+            <h5 className="font-bold py-2">{link.title}</h5>
+            {link.links.map((l) => (
+              <Link to={l.address} className="text-gray font-semibold text-sm">
+                {l.content}
+              </Link>
+            ))}
+          </div>
+        ))}
+        <div className="flex flex-col items-start justify-start gap-2">
+          <h5 className="font-bold py-2">Get In Touch</h5>
+          <form
+            onSubmit={handleSubscribe}
+            className="flex items-center justify-center border-light-gray-3 border-1 rounded-sm"
+          >
+            <input
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              type="text"
+              placeholder="Your Email"
+              className="w-[60%] bg-light-gray-2 py-4 px-2 text-sm rounded-sm font-normal"
+            />
+            <button
+              type="submit"
+              className="cursor-pointer w-[40%] bg-blue text-white font-medium tracking-wide rounded-r-sm px-2 py-4 text-sm"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p className="text-gray tracking-wide text-xs font-semibold">
+            Lore imp sum dolor Amit
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-center bg-light-gray text-gray font-bold py-10 sm:text-sm leading-6 font-montserrat tracking-wide md:justify-start md:flex-row md:gap-1 md:px-48 *:text-nowrap">
         <p>Made With Love By</p>
         <p>Finland All Right Reserved</p>
       </div>
