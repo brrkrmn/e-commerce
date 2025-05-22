@@ -1,5 +1,6 @@
-import { Menu, Search, ShoppingCart, UserRound } from "lucide-react";
+import { Search, ShoppingCart, UserRound } from "lucide-react";
 import { Link } from "react-router";
+import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
 import { links } from "./constants";
 
 const MobileHeader = () => {
@@ -11,12 +12,14 @@ const MobileHeader = () => {
           <UserRound />
           <Search />
           <ShoppingCart />
-          <Menu />
+          <HamburgerMenu />
         </div>
       </div>
       <div className="py-4 w-full flex flex-col md:flex-row items-center justify-center gap-6 text-xl text-gray font-medium">
-        {links.map(link => (
-          <Link to={link.address} key={link.content}>{link.content}</Link>
+        {links.map((link) => (
+          <Link to={link.address} key={link.content}>
+            {link.content}
+          </Link>
         ))}
       </div>
     </div>
