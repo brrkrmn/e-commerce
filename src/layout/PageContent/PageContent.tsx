@@ -6,7 +6,7 @@ const PageContent = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Header />
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow w-full">{children}</main>
       <Footer />
     </>
   );
