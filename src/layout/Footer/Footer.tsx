@@ -12,33 +12,35 @@ const Footer = () => {
 
   return (
     <div className="w-full flex flex-col font-montserrat tracking-wide *:px-10 *:md:px-48 *:py-12">
-      <div className="flex flex-col items-start gap-4 bg-light-gray-1 text-dark-blue md:flex-row md:justify-between">
-        <h3 className="font-bold text-2xl">Bandage</h3>
-        <div className="flex items-center justify-start gap-6">
-          <Link to="/home">
-            <img
-              className="w-7 h-7"
-              src="/src/assets/icons/footer/facebook.svg"
-              alt="Facebook logo"
-            />
-          </Link>
-          <Link to="/home">
-            <img
-              className="w-7 h-7"
-              src="/src/assets/icons/footer/instagram.svg"
-              alt="Facebook logo"
-            />
-          </Link>
-          <Link to="/home">
-            <img
-              className="w-7 h-7"
-              src="/src/assets/icons/footer/twitter.svg"
-              alt="Facebook logo"
-            />
-          </Link>
+      <div className="w-full flex items-center justify-center bg-light-gray-1 mx-auto">
+        <div className="w-full max-w-[1400px] flex flex-col items-start gap-4 text-dark-blue md:flex-row md:justify-between">
+          <h3 className="font-bold text-2xl">Bandage</h3>
+          <div className="flex items-center justify-start gap-6">
+            <Link to="/home">
+              <img
+                className="w-7 h-7"
+                src="/src/assets/icons/footer/facebook.svg"
+                alt="Facebook logo"
+              />
+            </Link>
+            <Link to="/home">
+              <img
+                className="w-7 h-7"
+                src="/src/assets/icons/footer/instagram.svg"
+                alt="Facebook logo"
+              />
+            </Link>
+            <Link to="/home">
+              <img
+                className="w-7 h-7"
+                src="/src/assets/icons/footer/twitter.svg"
+                alt="Facebook logo"
+              />
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col items-start gap-10 bg-main text-dark-blue lg:flex-row lg:justify-between">
+      <div className="w-full flex flex-col items-start gap-10 bg-main text-dark-blue lg:flex-row lg:justify-between max-w-[1400px] mx-auto">
         {links.map((link) => (
           <div className="flex flex-col items-start justify-start gap-4">
             <h5 className="font-bold py-2">{link.title}</h5>
@@ -74,9 +76,11 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center bg-light-gray-1 text-gray font-bold sm:text-sm leading-6 md:justify-start md:flex-row md:gap-1 *:text-nowrap">
-        <p>Made With Love By</p>
-        <p>Finland All Right Reserved</p>
+      <div className="w-full bg-light-gray-1 flex items-center justify-center">
+        <div className="w-full flex flex-col max-w-[1400px] items-center justify-center text-gray font-bold sm:text-sm leading-6 md:justify-start md:flex-row md:gap-1 *:text-nowrap">
+          <p>Made With Love By</p>
+          <p>Finland All Right Reserved</p>
+        </div>
       </div>
     </div>
   );
