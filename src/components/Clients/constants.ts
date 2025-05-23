@@ -1,4 +1,4 @@
-export const sponsors = [
+export const clients = [
   {
     src: "/src/assets/icons/sponsors/hooli.svg",
     address: "/",
