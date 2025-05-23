@@ -1,6 +1,7 @@
 import Clients from "../../components/Clients/Clients";
 import Category from "./components/Category/Category";
 import Hero from "./components/Hero/Hero";
+import Products from "./components/Products/Products";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Hero />
       <Clients />
       <Category />
+      <Products />
     </div>
   );
 };
