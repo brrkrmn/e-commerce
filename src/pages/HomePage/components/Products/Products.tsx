@@ -20,7 +20,7 @@ const Products = () => {
   const visibleProducts = isMdUp ? products.slice(0, 10) : products.slice(0, 8);
 
   return (
-    <div className="flex flex-col w-full max-w-[1400px] mx-auto items-center justify-start py-32 gap-16">
+    <div className="flex flex-col w-full max-w-[1400px] mx-auto items-center justify-start pt-32 gap-16">
       <div className="flex flex-col items-center justify-center px-10 gap-4">
         <h4 className="text-gray text-lg font-medium">Featured Products</h4>
         <h3 className="text-xl font-bold text-dark-blue px-10 text-center">

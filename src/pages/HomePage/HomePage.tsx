@@ -1,4 +1,5 @@
 import Clients from "../../components/Clients/Clients";
+import AboutUs from "./components/AboutUs/AboutUs";
 import Category from "./components/Category/Category";
 import Hero from "./components/Hero/Hero";
 import Products from "./components/Products/Products";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Clients />
       <Category />
       <Products />
+      <AboutUs />
     </div>
   );
 };
