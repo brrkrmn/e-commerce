@@ -61,7 +61,7 @@ export const links = [
   },
   {
     content: "About",
-    address: "/",
+    address: "/about",
   },
   {
     content: "Blog",

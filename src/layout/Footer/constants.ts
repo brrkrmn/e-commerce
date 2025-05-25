@@ -2,7 +2,7 @@ export const links = [
     {
       title: "Company Info",
       links: [
-        { content: "About Us", address: "/" },
+        { content: "About Us", address: "/about" },
         { content: "Carrier", address: "/" },
         { content: "We are hiring", address: "/" },
         { content: "Blog", address: "/" },
@@ -11,7 +11,7 @@ export const links = [
     {
       title: "Legal",
       links: [
-        { content: "About Us", address: "/" },
+        { content: "About Us", address: "/about" },
         { content: "Carrier", address: "/" },
         { content: "We are hiring", address: "/" },
         { content: "Blog", address: "/" },
