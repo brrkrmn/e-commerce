@@ -1,6 +1,7 @@
 import Clients from "../../components/Clients/Clients";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Category from "./components/Category/Category";
+import FeaturedPosts from "./components/FeaturedPosts/FeaturedPosts";
 import Features from "./components/Features/Features";
 import Hero from "./components/Hero/Hero";
 import Products from "./components/Products/Products";
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Products />
       <AboutUs />
       <Features />
+      <FeaturedPosts />
     </div>
   );
 };

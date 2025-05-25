@@ -12,17 +12,24 @@ const Features = () => {
           Problems trying to resolve the conflict between
         </p>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-20 py-10">
+      <div className="flex flex-col md:flex-row items-start justify-center gap-20 py-10">
         {features.map((feature, index) => (
-          <div className="flex-1 text-center flex flex-col items-center justify-start gap-4" key={index}>
+          <div
+            className="flex-1 text-center flex flex-col items-center justify-start gap-4"
+            key={index}
+          >
             <img src={feature.src} />
-            <h3 className="text-xl font-bold text-dark-blue">{feature.title}</h3>
-            <p className="text-gray text-sm font-medium">{feature.description}</p>
+            <h3 className="text-xl font-bold text-dark-blue">
+              {feature.title}
+            </h3>
+            <p className="text-gray text-sm font-medium">
+              {feature.description}
+            </p>
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default Features;
