@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const Hero = () => {
   return (
     <div className="w-full flex items-center justify-start px-3 xl:px-20">
@@ -10,9 +12,12 @@ const Hero = () => {
           <h4 className="text-center lg:text-start text-gray font-medium w-[80%] xl:text-lg text-base leading-normal">
             We know how large objects will act, but things on a small scale.
           </h4>
-          <button className="bg-blue text-white font-bold text-lg py-3 px-6 rounded-sm shadow-2xs">
+          <Link
+            to="/shop"
+            className="bg-blue text-white font-bold text-lg py-3 px-6 rounded-sm shadow-2xs"
+          >
             SHOP NOW
-          </button>
+          </Link>
         </div>
         <img
           src="/src/assets/images/homepage/hero-cover.png"
