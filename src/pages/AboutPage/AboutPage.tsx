@@ -6,14 +6,14 @@ import Team from "./components/Team/Team";
 
 const AboutPage = () => {
   return (
-    <div className="w-full max-w-[1400px] flex flex-col items-center justify-start">
+    <div className="w-full max-w-[1400px] flex flex-col items-center justify-start mx-auto font-montserrat tracking-wide">
       <Hero />
       <Details />
       <Team />
       <Companies />
       <CTA />
     </div>
-  )
+  );
 }
 
 export default AboutPage;
