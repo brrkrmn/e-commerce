@@ -10,6 +10,7 @@ const ProductCard = ({
     price: string;
     salePrice: string;
     address: string;
+    colors?: string[];
   };
 }) => {
   return (
@@ -27,6 +28,17 @@ const ProductCard = ({
         <p className="text-gray-2">{product.price}</p>
         <p className="text-green">{product.salePrice}</p>
       </div>
+      {product.colors && (
+        <div className="flex items-center justify-center gap-1">
+          {product.colors.map((color, index) => (
+            <div
+              key={index}
+              className={`rounded-full w-4 h-4`}
+              style={{ backgroundColor: color }}
+            ></div>
+          ))}
+        </div>
+      )}
     </Link>
   );
 };

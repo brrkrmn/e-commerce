@@ -35,7 +35,10 @@ const Products = () => {
           <ProductCard key={index} product={product} />
         ))}
       </div>
-      <Link to="/" className="border-1 text-blue text-sm font-semibold px-8 py-3 rounded-sm">
+      <Link
+        to="/shop"
+        className="border-1 text-blue text-sm font-semibold px-8 py-3 rounded-sm"
+      >
         LOAD MORE PRODUCTS
       </Link>
     </div>
