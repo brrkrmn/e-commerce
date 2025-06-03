@@ -13,7 +13,9 @@ const ShopPage = () => {
       <div className="w-full flex flex-col items-center justify-start px-4">
         <Products />
       </div>
-      <Clients />
+      <div className="w-full flex items-center justify-center bg-light-gray-2">
+        <Clients />
+      </div>
     </div>
   );
 };
