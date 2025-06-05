@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Clients from "../../components/Clients/Clients";
+import BestsellerProducts from "./components/BestsellerProducts/BestsellerProducts";
 import Header from "./components/Header/Header";
 import { type Product, products } from "./constants";
 
@@ -26,8 +27,8 @@ const ProductDetailPage = () => {
         {/* product detail */}
       </div>
       <div className="w-full flex items-center justify-center bg-light-gray-2">
-        <div className="max-w-[1400px] flex items-center justify-center">
-          {/* bestseller products */}
+        <div className="w-full max-w-[1400px] flex flex-col items-center justify-start">
+          <BestsellerProducts />
           <Clients />
         </div>
       </div>
