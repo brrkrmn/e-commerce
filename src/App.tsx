@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import PageContent from "./layout/PageContent/PageContent";
+import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import HomePage from "./pages/HomePage/HomePage";
 import TeamPage from "./pages/TeamPage/TeamPage";
@@ -11,6 +12,7 @@ function App() {
         <PageContent>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
