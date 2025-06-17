@@ -7,7 +7,7 @@ const DesktopHeader = () => {
   return (
     <div className="w-full bg-white py-6 flex items-center justify-between">
       <h3 className="font-bold text-dark-blue text-xl mr-28">Bandage</h3>
-      <div className="flex-grow flex items-center justify-start gap-5 text-sm text-gray font-semibold">
+      <div className="w-full flex-grow flex items-center justify-start gap-5 text-sm text-gray font-semibold">
         {links.map((link, index) =>
           link.sublinks ? (
             <ExpandableMenu key={index} link={link} />
