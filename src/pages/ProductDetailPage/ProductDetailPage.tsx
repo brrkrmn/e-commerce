@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import Clients from "../../components/Clients/Clients";
 import BestsellerProducts from "./components/BestsellerProducts/BestsellerProducts";
 import Header from "./components/Header/Header";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
 import { type Product, products } from "./constants";
 
 const ProductDetailPage = () => {
@@ -24,7 +25,7 @@ const ProductDetailPage = () => {
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-start px-4">
-        {/* product detail */}
+        <ProductDetails product={product} />
       </div>
       <div className="w-full flex items-center justify-center bg-light-gray-2">
         <div className="w-full max-w-[1400px] flex flex-col items-center justify-start">
